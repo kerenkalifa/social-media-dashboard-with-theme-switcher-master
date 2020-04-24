@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/* Resets */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Dashboard Header */
+
+/* Overview */
+.section-title {
+  margin: 1rem 0;
+  color: #63687e;
+}
+
+.overview {
+  width: 85%;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.card {
+  background-color: #f0f2fa;
+  color: #1e202a;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #f5f7ff;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-title p {
+  font-size: 14px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body h3 {
+  font-size: 2rem;
+}
+
+.card-body p.up-trend {
+  color: #1db489;
+}
+
+.card-body p.down-trend {
+  color: #dc414c;
+}
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -12,18 +12,9 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Frontend Mentor | Social Media Dashboard</title>
   </head>
   <body>
     Social Media Dashboard Total Followers: 23,004 Dark Mode @nathanf 1987
@@ -33,9 +24,116 @@
     <!-- Hi Adler, you can do this part - the Overview Today -->
     <!-- Checking to see if this works -->
 
-    Overview - Today Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views
-    52k 1375% Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407
-    12%
+    <section class="overview">
+      <h2 class="section-title">Overview - Today</h2>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-title">
+            <p>Page Views</p>
+            <img src="images/icon-facebook.svg" alt="Facebook Icon" />
+          </div>
+          <div class="card-body">
+            <h3>87</h3>
+            <p class="up-trend">
+              <span><img src="images/icon-up.svg" alt="Up Icon" /></span> 3%
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <p>Likes</p>
+            <img src="images/icon-facebook.svg" alt="Facebook Icon" />
+          </div>
+          <div class="card-body">
+            <h3>52</h3>
+            <p class="down-trend">
+              <span><img src="images/icon-down.svg" alt="Down Icon" /></span> 2%
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <p>Likes</p>
+            <img src="images/icon-instagram.svg" alt="Instagram Icon" />
+          </div>
+          <div class="card-body">
+            <h3>5462</h3>
+            <p class="up-trend">
+              <span><img src="images/icon-up.svg" alt="Up Icon" /></span> 2257%
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <p>Profile Views</p>
+            <img src="images/icon-instagram.svg" alt="Instagram Icon" />
+          </div>
+          <div class="card-body">
+            <h3>52k</h3>
+            <p class="up-trend">
+              <span><img src="images/icon-up.svg" alt="Up Icon" /></span> 1375%
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <p>Retweets</p>
+            <img src="images/icon-twitter.svg" alt="Twitter Icon" />
+          </div>
+          <div class="card-body">
+            <h3>117</h3>
+            <p class="up-trend">
+              <span><img src="images/icon-up.svg" alt="Up Icon" /></span> 303%
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <p>Likes</p>
+            <img src="images/icon-twitter.svg" alt="Twitter Icon" />
+          </div>
+          <div class="card-body">
+            <h3>507</h3>
+            <p class="up-trend">
+              <span><img src="images/icon-up.svg" alt="Up Icon" /></span> 553%
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <p>Likes</p>
+            <img src="images/icon-youtube.svg" alt="Youtube Icon" />
+          </div>
+          <div class="card-body">
+            <h3>107</h3>
+            <p class="down-trend">
+              <span><img src="images/icon-down.svg" alt="Down Icon" /></span>
+              19%
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <p>Total Views</p>
+            <img src="images/icon-youtube.svg" alt="Youtube Icon" />
+          </div>
+          <div class="card-body">
+            <h3>1407</h3>
+            <p class="down-trend">
+              <span><img src="images/icon-down.svg" alt="Down Icon" /></span>12%
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="attribution">
       Challenge by
