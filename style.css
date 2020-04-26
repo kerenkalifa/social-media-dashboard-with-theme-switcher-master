@@ -161,6 +161,22 @@ input:focus + .slider {
   color: #63687e;
 }
 
+.facebook {
+  border-top: 4px solid var(--Facebook);
+}
+
+.twitter {
+  border-top: 4px solid var(--Twitter);
+}
+
+.instagram {
+  border-top: 4px solid var(--Instagram);
+}
+
+.youtube {
+  border-top: 4px solid var(--YouTube);
+}
+
 .overview,
 .dashboard-top,
 section {
