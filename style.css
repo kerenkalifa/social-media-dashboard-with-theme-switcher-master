@@ -8,17 +8,8 @@
   /* Social network colors */
   --Facebook: hsl(195, 100%, 50%);
   --Twitter: hsl(203, 89%, 53%);
-  --Instagram: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+  --Instagram: linear-gradient(to left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   --YouTube: hsl(348, 97%, 39%);
-
-  /* Dark theme colors */
-  --d-bg-pattern: hsl(230, 17%, 14%);
-  --d-top-bg-pattern: hsl(232, 19%, 15%);
-  --d-card-bg: hsl(228, 28%, 20%);
-  --d-text-blue: hsl(228, 34%, 66%);
-  --d-text-white: hsl(0, 0%, 100%);
-  --d-hover-color: hsl(228, 28%, 25%);
-  --d-toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
 
   /* Light theme colors */
   --W-bg-pattern: hsl(0, 0%, 100%);
@@ -62,7 +53,8 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2rem;
   position: relative;
-  top: -100px;
+  /* top: -100px; */
+  top: -50px;
 }
 
 .toggler .switch {
@@ -170,11 +162,14 @@ input:focus + .slider {
 }
 
 .instagram {
-  border-top: 4px solid hsl(329, 70%, 58%);
-  position: relative;
+  border-top: solid;
+  border-image-source: var(--Instagram);
+  border-image-slice: 1;
+  border-width: 4px;
+  border-radius: 50px;
 }
 
-.instagram::before {
+/* .instagram::before {
   content: "";
   position: absolute;
   top: -4px;
@@ -184,7 +179,7 @@ input:focus + .slider {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   z-index: 2;
-}
+} */
 
 .youtube {
   border-top: 4px solid var(--YouTube);

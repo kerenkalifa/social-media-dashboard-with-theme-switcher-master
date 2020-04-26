@@ -1,0 +1,40 @@
+:root {
+  /* Dark theme colors */
+  --d-bg-pattern: hsl(230, 17%, 14%);
+  --d-top-bg-pattern: hsl(232, 19%, 15%);
+  --d-card-bg: hsl(228, 28%, 20%);
+  --d-text-blue: hsl(228, 34%, 66%);
+  --d-text-white: hsl(0, 0%, 100%);
+  --d-hover-color: hsl(228, 28%, 25%);
+  --d-toggle: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.is-dark-mode {
+  background-color: var(--d-bg-pattern);
+}
+
+.is-dark-mode .dashboard-header {
+  background-color: var(--d-top-bg-pattern);
+}
+
+.is-dark-mode .dashboard-top-title {
+  color: var(--d-text-white);
+}
+
+.is-dark-mode #toggle-input + .slider {
+  background: red;
+}
+
+.is-dark-mode #toggle-input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.is-dark-mode .card,
+.followers,
+.card.facebook,
+.card.twitter,
+.card.instagram,
+.card.youtube {
+  background-color: var(--d-card-bg);
+  color: var(--d-text-white);
+}
