@@ -27,7 +27,7 @@
   --w-text-blueish: hsl(228, 12%, 44%);
   --w-dark-blue: hsl(230, 17%, 14%);
   --w-hover-color: hsl(227, 47%, 90%);
-  --toggle: hsl(230, 22%, 74%);
+  --w-toggle: hsl(230, 22%, 74%);
 }
 
 /* Resets */
@@ -39,15 +39,28 @@
 }
 
 /* Dashboard Header */
-.dashboard-top {
+.dashboard-header {
+  background-color: var(--w-top-bg-pattern);
   height: 30vh;
-  background-color: var(--W-bg-pattern);
+}
+
+.dashboard-top {
+  /* margin: 30px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+  /* background-color: var(--W-bg-pattern); */
+}
+
+.dashboard-top-title {
+  color: var(--w-dark-blue);
 }
 
 .dashboard-main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
+  column-gap: 2rem;
   position: relative;
   top: -100px;
 }
@@ -55,8 +68,8 @@
 .toggler .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 40px;
+  height: 20px;
 }
 
 /* Hide default HTML checkbox */
@@ -66,6 +79,12 @@
   height: 0;
 }
 
+#toggler-name {
+  display: inline-block;
+  position: relative;
+  right: 10px;
+}
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -73,25 +92,27 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--d-toggle);
+  background-color: var(--w-toggle);
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border-radius: 34px;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border-radius: 50%;
 }
 
 input:checked + .slider {
-  background-color: var(--W-bg-pattern);
+  background-color: var(--w-toggle);
 }
 
 input:focus + .slider {
@@ -141,15 +162,30 @@ input:focus + .slider {
 }
 
 .overview,
-.dashboard-header {
+.dashboard-top,
+section {
   width: 85%;
   margin: auto;
+}
+
+h4 {
+  font-size: 14px;
+  color: var(--w-text-blueish);
+}
+
+.updates h4 {
+  color: var(--lime-green);
+}
+.updates img {
+  position: relative;
+  bottom: 3px;
+  right: 5px;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .card {
