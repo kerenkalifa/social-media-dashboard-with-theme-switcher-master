@@ -164,8 +164,7 @@ input:focus + .slider {
 .instagram {
   border: 0;
   border-top: solid 4px transparent;
-  background-image: linear-gradient(var(--w-card-bg), var(--w-card-bg)),
-    linear-gradient(to right, #fdc468, #df4996);
+  background-image: linear-gradient(var(--w-card-bg), var(--w-card-bg)), linear-gradient(to right, #fdc468, #df4996);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
@@ -254,17 +253,14 @@ h4 {
   .dashboard-main {
     top: -50px;
   }
-  .subs-number {
-    font-size: 60px;
+  .subscribers {
+    font-size: 40px;
   }
   .followers {
     letter-spacing: 3px;
   }
-  .card-number {
+  .card-body h3 {
     font-size: 25px;
-  }
-  .second-section {
-    top: 0;
   }
 }
 @media screen and (max-width: 920px) {
@@ -286,6 +282,7 @@ h4 {
     margin: 20px auto 30px;
     position: relative;
     width: 100%;
+    font-size: 1em;
   }
 
   .toggler {
@@ -323,6 +320,7 @@ h4 {
     margin: 20px auto 30px;
     position: relative;
     width: 100%;
+    font-size: 0.5em;
   }
   .toggler {
     justify-content: space-between;
@@ -333,6 +331,16 @@ h4 {
   .dashboard-main {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 60px;
+  }
+
+  .subscribers {
+    font-size: 40px;
+  }
+  .followers {
+    letter-spacing: 3px;
+  }
+  .card-body h3 {
+    font-size: 25px;
   }
   .dashboard-main .card {
   }
