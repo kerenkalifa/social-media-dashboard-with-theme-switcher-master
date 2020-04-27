@@ -164,7 +164,8 @@ input:focus + .slider {
 .instagram {
   border: 0;
   border-top: solid 4px transparent;
-  background-image: linear-gradient(var(--w-card-bg), var(--w-card-bg)), linear-gradient(to right, #fdc468, #df4996);
+  background-image: linear-gradient(var(--w-card-bg), var(--w-card-bg)),
+    linear-gradient(to right, #fdc468, #df4996);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
@@ -341,8 +342,6 @@ h4 {
   }
   .card-body h3 {
     font-size: 25px;
-  }
-  .dashboard-main .card {
   }
 
   .cards {
