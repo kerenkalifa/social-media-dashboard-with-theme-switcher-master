@@ -22,7 +22,11 @@
 }
 
 .is-dark-mode #toggle-input + .slider {
-  background: red;
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.is-dark-mode #toggle-input:checked + .slider {
+  color: red;
 }
 
 .is-dark-mode #toggle-input:checked + .slider::before {

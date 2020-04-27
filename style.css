@@ -64,6 +64,15 @@
   height: 20px;
 }
 
+.card,
+.followers,
+.card.facebook,
+.card.twitter,
+.card.instagram,
+.card.youtube {
+  background-color: var(--w-card-bg);
+}
+
 /* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
