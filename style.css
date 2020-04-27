@@ -8,7 +8,7 @@
   /* Social network colors */
   --Facebook: hsl(195, 100%, 50%);
   --Twitter: hsl(203, 89%, 53%);
-  --Instagram: linear-gradient(to left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   --YouTube: hsl(348, 97%, 39%);
 
   /* Light theme colors */
@@ -62,15 +62,6 @@
   display: inline-block;
   width: 40px;
   height: 20px;
-}
-
-.card,
-.followers,
-.card.facebook,
-.card.twitter,
-.card.instagram,
-.card.youtube {
-  background-color: var(--w-card-bg);
 }
 
 /* Hide default HTML checkbox */
@@ -171,11 +162,12 @@ input:focus + .slider {
 }
 
 .instagram {
-  border-top: solid;
-  border-image-source: var(--Instagram);
-  border-image-slice: 1;
-  border-width: 4px;
-  border-radius: 50px;
+  border: 0;
+  border-top: solid 4px transparent;
+  background-image: linear-gradient(var(--w-card-bg), var(--w-card-bg)),
+    linear-gradient(to right, #fdc468, #df4996);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 /* .instagram::before {

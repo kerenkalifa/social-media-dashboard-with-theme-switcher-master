@@ -7,6 +7,7 @@
   --d-text-white: hsl(0, 0%, 100%);
   --d-hover-color: hsl(228, 28%, 25%);
   --d-toggle: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
 }
 
 .is-dark-mode {
@@ -31,14 +32,16 @@
 
 .is-dark-mode #toggle-input:checked + .slider::before {
   transform: translateX(20px);
+  background-color: var(--d-top-bg-pattern);
 }
 
 .is-dark-mode .card,
-.followers,
-.card.facebook,
-.card.twitter,
-.card.instagram,
-.card.youtube {
+.is-dark-mode .followers {
   background-color: var(--d-card-bg);
   color: var(--d-text-white);
+}
+
+.is-dark-mode .instagram {
+  background-image: linear-gradient(var(--d-card-bg), var(--d-card-bg)),
+    linear-gradient(to right, #fdc468, #df4996);
 }
